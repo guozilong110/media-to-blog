@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>皮质醇专题 · 播客内容总结</title>
+<style>
+  :root { --ink:#1d1d1f; --muted:#666; --line:#e3e3e6; --accent:#0b6b5f; --bad:#b3261e; --good:#1a7f37; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+         color:var(--ink); line-height:1.75; background:#fafafa; }
+  .wrap { max-width:860px; margin:0 auto; padding:48px 24px 80px; }
+  header { border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:36px; }
+  h1 { font-size:1.9rem; margin:0 0 8px; letter-spacing:-.01em; }
+  .meta { color:var(--muted); font-size:.9rem; }
+  h2 { font-size:1.3rem; margin:44px 0 12px; padding-top:14px; border-top:1px solid var(--line); }
+  h3 { font-size:1.05rem; margin:24px 0 8px; }
+  p, li { font-size:1rem; }
+  ul { padding-left:1.3em; }
+  .lead { background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px 22px; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; background:#fff; font-size:.95rem; }
+  th, td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+  th { background:#f2f4f4; font-weight:600; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:640px){ .cols { grid-template-columns:1fr; } }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 18px; }
+  .card.bad { border-left:4px solid var(--bad); }
+  .card.good { border-left:4px solid var(--good); }
+  .card h4 { margin:.2em 0 .5em; font-size:1rem; }
+  .note { background:#fff8e6; border:1px solid #f0dda0; border-radius:8px; padding:12px 16px; font-size:.95rem; }
+  .tier { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 18px; margin:12px 0; }
+  .tier span { display:inline-block; background:var(--accent); color:#fff; border-radius:4px;
+               padding:1px 8px; font-size:.8rem; margin-right:8px; }
+  figure { margin:24px 0; }
+  figure svg { display:block; width:100%; height:auto; }
+  figcaption { color:var(--muted); font-size:.85rem; margin-top:8px; }
+  code { background:#eef1f1; padding:1px 5px; border-radius:4px; font-size:.9em; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>皮质醇：机制、节律、分型与调节</h1>
+  <p class="meta">《万物生长FM》单集内容总结 · 主播：玉米 · 资料来源：牛津内分泌期刊、内分泌学会官方指南等</p>
+</header>
+
+<p class="lead">这期节目要解决的问题是：社交媒体上「皮质醇高」被贴到减肥、失眠、情绪崩溃等各种现象上，但很少有人讲清它是什么。主播的核心结论是，皮质醇不是坏激素，也不是越低越好，判断标准是<strong>昼夜节律</strong>，即早高晚低的落差是否正常。绝大多数人的问题是作息、压力、饮食造成的生理性紊乱，可以靠生活方式改善。</p>
+
+<h2>一、它是什么，怎么分泌</h2>
+<p>皮质醇是人体最核心的糖皮质激素，由肾上腺皮质束状带以胆固醇为原料合成，贯穿代谢、应激、免疫、神经、心血管各系统。「压力激素」只是它的一个身份。遇到危险时升血糖、提升专注、抑制急性炎症、调动能量都靠它；严重不足会导致爱迪生病，出现低血压、重度乏力甚至休克。</p>
+<p>分泌走 <strong>HPA 轴</strong>（下丘脑—垂体—肾上腺）：下丘脑视旁核接到压力、光照、睡眠信号后释放 CRH（并有精氨酸加压素放大效果）→ 作用于垂体前叶分泌 ACTH → 经血液到肾上腺，刺激合成皮质醇。这条通路自带负反馈：血中浓度达标后反向抑制下丘脑和垂体。慢性压力、持续熬夜、极端节食会让这个负反馈失效，皮质醇降不下来，节律崩塌。</p>
+<p>此外，下丘脑的视交叉上核作为全身总生物钟，通过自然光的明暗同步调节 HPA 轴，决定 24 小时波动曲线。这是把光照放在调节措施第一位的生理依据。</p>
+
+<figure>
+<svg viewBox="0 0 560 480" role="img" aria-labelledby="hpa-title hpa-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="hpa-title">HPA 轴与皮质醇的负反馈</title>
+<desc id="hpa-desc">下丘脑、垂体、肾上腺依次传递信号合成皮质醇，血中皮质醇达标后反向抑制下丘脑和垂体，形成自动回落的闭环。</desc>
+<defs>
+  <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
+  <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#0b6b5f"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#fafafa"/>
+<line x1="200" y1="112" x2="200" y2="160" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="200" y1="224" x2="200" y2="272" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<line x1="200" y1="336" x2="200" y2="384" stroke="#4f5d75" stroke-width="1.2" marker-end="url(#arrow)"/>
+<path d="M300,412 H460 Q468,412 468,404 V92 Q468,84 460,84 H308" fill="none" stroke="#0b6b5f" stroke-width="1.2" stroke-dasharray="5,4" marker-end="url(#arrow-accent)"/>
+<rect x="404" y="228" width="128" height="20" rx="2" fill="#fafafa"/>
+<text x="468" y="242" fill="#0b6b5f" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">负反馈抑制</text>
+<rect x="212" y="126" width="52" height="18" rx="2" fill="#fafafa"/>
+<text x="238" y="139" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">CRH</text>
+<rect x="212" y="238" width="60" height="18" rx="2" fill="#fafafa"/>
+<text x="242" y="251" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">ACTH</text>
+<rect x="212" y="350" width="72" height="18" rx="2" fill="#fafafa"/>
+<text x="248" y="363" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">合成释放</text>
+<g font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+<rect x="100" y="56" width="200" height="56" rx="6" fill="#fff" stroke="#1d1d1f"/>
+<text x="200" y="82" fill="#1d1d1f" font-size="14" font-weight="600" text-anchor="middle">下丘脑</text>
+<text x="200" y="100" fill="#4f5d75" font-size="12" text-anchor="middle">视旁核接收压力·光照·睡眠信号</text>
+<rect x="100" y="168" width="200" height="56" rx="6" fill="#fff" stroke="#1d1d1f"/>
+<text x="200" y="194" fill="#1d1d1f" font-size="14" font-weight="600" text-anchor="middle">垂体前叶</text>
+<text x="200" y="212" fill="#4f5d75" font-size="12" text-anchor="middle">分泌促肾上腺皮质激素</text>
+<rect x="100" y="280" width="200" height="56" rx="6" fill="#fff" stroke="#1d1d1f"/>
+<text x="200" y="306" fill="#1d1d1f" font-size="14" font-weight="600" text-anchor="middle">肾上腺（束状带）</text>
+<text x="200" y="324" fill="#4f5d75" font-size="12" text-anchor="middle">以胆固醇为原料合成</text>
+<rect x="100" y="392" width="200" height="56" rx="6" fill="#eaf2f0" stroke="#0b6b5f"/>
+<text x="200" y="418" fill="#0b6b5f" font-size="14" font-weight="600" text-anchor="middle">皮质醇</text>
+<text x="200" y="436" fill="#4f5d75" font-size="12" text-anchor="middle">升血糖·抗炎·调动能量</text>
+</g>
+</svg>
+<figcaption>HPA 轴自上而下逐级传递信号合成皮质醇，血中浓度达标后经绿色虚线的负反馈通路反向抑制下丘脑和垂体，让皮质醇自动回落。</figcaption>
+</figure>
+
+<h2>二、正常的 24 小时节律</h2>
+<table>
+  <tr><th>时段</th><th>皮质醇水平</th></tr>
+  <tr><td>醒后 30–60 分钟</td><td>全天峰值，健康人升幅 &gt;50%（皮质醇唤醒反应，代表 HPA 轴反应正常）</td></tr>
+  <tr><td>上午至下午</td><td>从峰值缓慢下降，中午中等水平，下午持续走低</td></tr>
+  <tr><td>23 点至午夜前后</td><td>全天最低，约为晨间的十分之一，保证褪黑素分泌和睡眠</td></tr>
+  <tr><td>凌晨 2–3 点</td><td>小幅回升，为清晨峰值铺垫</td></tr>
+</table>
+
+<figure>
+<svg viewBox="0 0 1000 500" role="img" aria-labelledby="rhythm-title rhythm-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="rhythm-title">健康人皮质醇的 24 小时节律</title>
+<desc id="rhythm-desc">皮质醇在醒来后半小时达到全天峰值，随后一路下降，午夜前后降到约为晨间峰值十分之一的最低点，凌晨再小幅回升。曲线为相对趋势，非绝对数值。</desc>
+<rect width="100%" height="100%" fill="#fafafa"/>
+<g stroke="rgba(45,49,66,0.10)" stroke-width="0.8">
+<line x1="80" y1="60" x2="960" y2="60"/><line x1="80" y1="150" x2="960" y2="150"/><line x1="80" y1="240" x2="960" y2="240"/><line x1="80" y1="330" x2="960" y2="330"/><line x1="80" y1="420" x2="960" y2="420"/>
+</g>
+<text x="28" y="240" fill="#4f5d75" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle" transform="rotate(-90 28 240)">相对水平（趋势示意）</text>
+<text x="72" y="64" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="end">峰值</text>
+<text x="72" y="424" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="end">谷底</text>
+<polygon points="80,391 190,370 300,258 355,60 410,114 520,204 630,269 740,319 850,355 960,391 960,420 80,420" fill="rgba(11,107,95,0.08)"/>
+<polyline points="80,391 190,370 300,258 355,60 410,114 520,204 630,269 740,319 850,355 960,391" fill="none" stroke="#0b6b5f" stroke-width="1.8" stroke-linejoin="round"/>
+<circle cx="355" cy="60" r="4" fill="#0b6b5f"/>
+<rect x="316" y="34" width="120" height="18" rx="2" fill="#fafafa"/>
+<text x="376" y="47" fill="#0b6b5f" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">醒后30–60分钟峰值</text>
+<circle cx="960" cy="391" r="4" fill="#4f5d75"/>
+<rect x="820" y="404" width="140" height="18" rx="2" fill="#fafafa"/>
+<text x="890" y="417" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">午夜最低，约峰值1/10</text>
+<g fill="#4f5d75" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+<text x="80" y="446">0点</text><text x="300" y="446">6点</text><text x="520" y="446">12点</text><text x="740" y="446">18点</text><text x="960" y="446">24点</text>
+</g>
+<text x="520" y="474" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">一天内的时间</text>
+</svg>
+<figcaption>皮质醇全天先高后低：醒后半小时就到峰，之后一路回落，午夜前后降至约峰值的十分之一，凌晨再小幅回升。曲线为相对趋势示意，不代表绝对数值。</figcaption>
+</figure>
+
+<p>临床和研究看的是<strong>昼夜斜率</strong>而非绝对数值：健康人约在 −0.3 以上，若压平到 −0.1 至 −0.15 即视为节律紊乱，与代谢综合征和抑郁风险升高相关。牛津 meta 分析的做法是晨起、中午、下午（傍晚）、睡前四次唾液采样，画曲线并用曲线下面积估算全天总量；但总量正常与否远不如节律重要。慢性压力人群总分泌量往往偏低，这就是民间说的「肾上腺疲劳」，而内分泌学会并不承认它是正规诊断。</p>
+
+<h2>三、两类刺激源</h2>
+<div class="cols">
+  <div class="card good">
+    <h4>良性刺激（不破坏节律，反而提升应激韧性）</h4>
+    <ul>
+      <li>晨间自然光照射</li>
+      <li>30 分钟以内的低强度快走</li>
+      <li>一次性急性压力，如临时上台做小演讲</li>
+      <li>30–60 分钟的力量训练，升高后能快速回落</li>
+    </ul>
+  </div>
+  <div class="card bad">
+    <h4>恶性慢性刺激（六大核心诱因）</h4>
+    <ul>
+      <li>睡眠剥夺、入睡不稳、夜间蓝光持续照射</li>
+      <li>长期心理内耗、持续焦虑、精神紧绷</li>
+      <li>极端低热量节食、长期空腹、频繁长时间断食</li>
+      <li>慢性疼痛、长期全身炎症</li>
+      <li>过量咖啡因、长期酒精</li>
+      <li>上夜班、昼夜轮班</li>
+    </ul>
+  </div>
+</div>
+<p>关于空腹有氧：主播自己坚持过近一年（空腹爬楼、骑车、跑步），对减脂确实有帮助，但有研究显示空腹有氧后全天总摄入会比餐后有氧更高，长期做还会加剧肌肉分解。属于有利有弊，看个人时间安排。</p>
+
+<h2>四、对各系统的影响</h2>
+
+<h3>代谢系统</h3>
+<p><strong>偏高：</strong>激活肝脏糖异生，强制造葡萄糖，升高空腹血糖、降低胰岛素敏感性，二型糖尿病风险上升（库欣患者中约 80% 伴胰岛素抵抗）；定向分解四肢脂肪、囤积腹部，对应腹型肥胖和内脏脂肪；提升饥饿素、抑制瘦素，傍晚和深夜对高糖高油精致碳水的食欲暴涨。</p>
+<p><strong>蛋白质代谢（健身人群重点）：</strong>加速肌肉蛋白分解并抑制合成通路，表现为增肌停滞甚至肌肉流失。运动医学期刊的对照实验显示，训练后不及时补碳水和蛋白质，皮质醇会持续升高 90 分钟以上，大幅抵消训练收益。主播的做法是训练后吃一根香蕉或一点西瓜，再补鸡蛋、肉类等优质蛋白，蛋白粉也可以。</p>
+<p><strong>偏低：</strong>血糖持续偏低、容易低血糖头晕、食欲差吃不下、乏力水肿。</p>
+
+<h3>神经系统</h3>
+<p>长期过量会加速海马神经元凋亡，损伤海马体，带来记忆力下降、注意力涣散、情绪敏感。夜间皮质醇居高不下会抑制褪黑素，导致睡眠浅、多梦、凌晨三四点固定早醒；失眠又会继续拉高夜间皮质醇，形成双向恶性循环。2024 年一项 15 天追踪研究显示，睡前唾液皮质醇越高，当晚睡眠时长越短、深睡占比越低。偏低则整天昏沉、提不起兴趣，需要靠咖啡因提神。</p>
+
+<h3>免疫与炎症</h3>
+<p>短期急性升高能强效抑制全身炎症，临床上用这个原理治疗过敏和自身免疫病的炎症。但日常那种短暂压力或力量训练带来的升高既不会损伤免疫，也不具备这套抗炎效果，不必神话。长期慢性偏高才有害：压制淋巴细胞活性，免疫防御下降，频繁感冒、过敏。</p>
+
+<h3>骨骼与皮肤</h3>
+<p>偏高加速钙流失、抑制骨细胞活性，腰椎和髋部骨密度下降；皮质醇紊乱还会带来皮肤暗沉和反复爆痘。</p>
+
+<h2>五、现代人的四种紊乱分型</h2>
+<p>结合功能医学四点唾液检测图和内分泌学会科普资料，覆盖约 95% 的皮质醇问题。</p>
+<table>
+  <tr><th>分型</th><th>典型人群与诱因</th><th>节律特征</th><th>主要表现</th></tr>
+  <tr>
+    <td><strong>1. 慢性全天持续偏高</strong></td>
+    <td>上班族白领；工作压力大、熬夜、内耗、高强度加班、极端节食减脂</td>
+    <td>四个时间点全部高于标准区间，下行斜率变缓</td>
+    <td>内脏脂肪堆积、减脂平台期、嗜甜嗜油炸、饭后犯困、入睡慢躺下就想事、易怒敏感、血压偏高、肩颈紧绷、皮肤差</td>
+  </tr>
+  <tr>
+    <td><strong>2. 节律颠倒型（夜间超标）</strong></td>
+    <td>失眠人群、倒班者、睡前长时间玩手机、深夜打球运动、睡前暴饮暴食</td>
+    <td>晨间峰值可能正常，但傍晚和睡前不回落，夜间谷底远高于正常，曲线近乎水平</td>
+    <td>入睡困难、睡眠质量差</td>
+  </tr>
+  <tr>
+    <td><strong>3. 唤醒反应钝化（晨起偏低）</strong></td>
+    <td>健身人群长期极低热量饮食、过度有氧；孕产妇长期睡眠破碎</td>
+    <td>基础值偏低，起床 30 分钟升不到 50%，唤醒反应几乎消失，日间曲线平缓</td>
+    <td>起床困难，醒后 1–2 小时昏沉，需靠咖啡浓茶清醒，上午疲惫、下午才转好</td>
+  </tr>
+  <tr>
+    <td><strong>4. HPA 轴重度耗竭（全天偏低）</strong></td>
+    <td>三年以上持续透支、长期睡眠不足、多次极端减脂、长期高强度训练无休息、重度抑郁焦虑</td>
+    <td>全天偏低，反馈通路钝化</td>
+    <td>乏力、低血压、头晕、食欲不振、免疫力差；通常已因其他更显化的疾病问题就诊</td>
+  </tr>
+</table>
+<div class="note">
+  <p><strong>两个概念要分清。</strong>第四型常被叫作「肾上腺疲劳」，但内分泌学会立场声明明确它不是正规医学诊断，它的本质是慢性压力导致的轴反馈钝化，与爱迪生病那种腺体病变不同。另一头是<strong>库欣综合征</strong>，指垂体或肾上腺的器质性、病理性病变（如肿瘤）导致的皮质醇问题，病情严重且难治，但普通人单纯因压力几乎不会诱发，发病率很低。九成以上人所说的「皮质醇紊乱」都是作息、压力、饮食造成的生理性紊乱，相对容易改善。</p>
+</div>
+
+<h2>六、怎么判断和检测</h2>
+<p>先说提醒：单一症状无法判定皮质醇异常。疲劳、腹胖、失眠背后有甲状腺问题、贫血、情绪疾病等数十种诱因，对号入座只会增加焦虑，而焦虑本身又会推高皮质醇。</p>
+<table>
+  <tr><th>方式</th><th>用途</th><th>说明</th></tr>
+  <tr><td>症状自我分型</td><td>居家、零成本</td><td>按上面四种分型综合比对，仅作参考。能满足八九成人的需求</td></tr>
+  <tr><td>四点唾液检测</td><td>看节律（功能医学通用）</td><td>醒来、午间、傍晚、睡前各采一次。网上有自测试剂，但主播不建议买：价格不便宜，且很可能测完更焦虑</td></tr>
+  <tr><td>单次晨间血液皮质醇</td><td>初筛器质性肾上腺疾病</td><td>多数医院可做；只有一个时点，看不出节律</td></tr>
+  <tr><td>24 小时尿游离皮质醇</td><td>库欣综合征筛查金标准</td><td>收集全天尿液测总排泄量，普通人不需要</td></tr>
+  <tr><td>午夜唾液皮质醇</td><td>库欣综合征辅助</td><td>23–24 点采样。健康人午夜极低，库欣患者明显偏高</td></tr>
+</table>
+<p>分流建议：只是失眠、压力大、减脂平台期、情绪波动，做症状自我分型就够；确有需要再做居家筛查；如果怀疑器质性内分泌疾病（自发性骨折、持续高血压等），去医院做采血或相关检查。</p>
+
+<h2>七、实操：按优先级调节</h2>
+
+<figure>
+<svg viewBox="0 0 700 380" role="img" aria-labelledby="tier-title tier-desc" xmlns="http://www.w3.org/2000/svg">
+<title id="tier-title">皮质醇调节措施的优先级</title>
+<desc id="tier-desc">生活方式基础干预是最有效也最基础的一层，其次是营养与饮食干预，补剂排在所有动作的最后一位。</desc>
+<rect width="100%" height="100%" fill="#fafafa"/>
+<defs><marker id="up" markerWidth="8" markerHeight="8" refX="4" refY="1" orient="auto"><polygon points="4 0, 8 6, 0 6" fill="#4f5d75"/></marker></defs>
+<line x1="40" y1="60" x2="40" y2="320" stroke="#4f5d75" stroke-width="1" marker-start="url(#up)"/>
+<text x="24" y="190" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle" transform="rotate(-90 24 190)">越靠底越基础、越有效</text>
+<g font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+<polygon points="350,60 430,140 270,140" fill="#eaf2f0" stroke="#0b6b5f"/>
+<text x="350" y="118" fill="#0b6b5f" font-size="14" font-weight="600" text-anchor="middle">补剂</text>
+<polygon points="270,148 430,148 510,228 190,228" fill="#fff" stroke="#1d1d1f"/>
+<text x="350" y="186" fill="#1d1d1f" font-size="14" font-weight="600" text-anchor="middle">营养与饮食干预</text>
+<text x="350" y="206" fill="#4f5d75" font-size="12" text-anchor="middle">规律三餐·优质蛋白·稳血糖·关键营养素</text>
+<polygon points="190,236 510,236 590,316 110,316" fill="#fff" stroke="#1d1d1f"/>
+<text x="350" y="272" fill="#1d1d1f" font-size="14" font-weight="600" text-anchor="middle">生活方式基础干预</text>
+<text x="350" y="292" fill="#4f5d75" font-size="12" text-anchor="middle">光照·作息·运动安排·减少信息内耗</text>
+</g>
+<text x="612" y="104" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">最后一位</text>
+<text x="612" y="192" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">第二优先</text>
+<text x="612" y="280" fill="#7a8399" font-size="12" font-family="-apple-system,'PingFang SC','Microsoft YaHei',sans-serif">第一优先</text>
+</svg>
+<figcaption>调节皮质醇按优先级分三层：底层的生活方式干预最基础也最有效，向上依次是营养饮食，补剂在顶端、排最后。</figcaption>
+</figure>
+
+<div class="tier">
+  <span>第一优先级</span><strong>生活方式基础干预</strong>：最有效，且没有替代方案，也不花钱。
+  <ul>
+    <li><strong>光照：</strong>起床后争取 15–30 分钟接触自然光，拉开窗帘、下楼在公园走走、开窗坐会儿都算；实在不行至少开亮室内灯。晨起一小时内不见光、拉着窗帘玩手机，会让唤醒反应钝化、峰值不足，整天斜率也就塌了。</li>
+    <li><strong>夜间蓝光：</strong>睡前两小时别持续看手机电脑；非看不可就开护眼模式，总比强蓝光刷一小时短视频好。主播最近几周在试把手机放到远离床边的位置。</li>
+    <li><strong>作息：</strong>固定起床时间，入睡起床每波动一小时都会扰乱节律。争取 23 点前躺下、7 点前起床，保证 7–8 小时连续睡眠，减少夜醒。长期睡不足 6 小时影响很大。</li>
+    <li><strong>运动安排：</strong>砍掉 22 点后的高强度、大重量力竭训练；避免长期或单次超 60 分钟的空腹有氧。晨间做瑜伽、拉伸等低强度活动；力量训练尽量安排在 17 点前（上班族即使只能下班后做，也要尽早结束）；训练后立刻补优质碳水和蛋白；每周至少 2–3 次 30–45 分钟中低强度有氧，可降低皮质醇基线；<strong>每周必须有休息日</strong>，长期超负荷无休会透支 HPA 轴。</li>
+    <li><strong>压力：</strong>每天留出 30 分钟完全无信息干扰的时间，微信提醒和 App 推送都关掉。听起来简单，做起来不容易。</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <span>第二优先级</span><strong>营养与饮食干预</strong>
+  <ul>
+    <li>不做极端节食。健康减脂每天 300 大卡缺口已经很够（例：基础代谢约 1800 大卡，摄入 1500 大卡）。</li>
+    <li>三餐规律，优质蛋白 + 复合碳水 + 健康脂肪，维持血糖平稳。早餐尤其要有足量蛋白质，不要只吃个水煮蛋就完事。</li>
+    <li>避开血糖过山车：奶茶甜品会反复刺激皮质醇；也别连续 6–7 小时不进食，两餐之间可少量补充酸奶或低热量零食。</li>
+    <li>咖啡因每天不超过两杯美式的量，16 点后（最好 14 点后）不再喝。</li>
+    <li>避免夜间大量进食和长期、大量饮酒，酒精会破坏深度睡眠。</li>
+    <li>有临床证据支持的营养素：<strong>镁</strong>（绿叶菜、坚果、牛油果）降低应激皮质醇；<strong>维生素 C</strong>（浆果、彩椒、柑橘）帮助峰值回落；<strong>B 族（B5、B6）</strong>（全谷物、鸡蛋）支撑肾上腺合成；<strong>Omega-3（EPA/DHA）</strong>降低全身炎症、间接平稳皮质醇。</li>
+  </ul>
+</div>
+
+<div class="tier">
+  <span>最后一位</span><strong>补剂</strong>：主播开篇即强调，补剂在所有调节动作的排序中排最后，节目里提到个别产品但不是广告。
+</div>
+
+<footer>
+  说明：本页是对播客转录内容的整理。转录文本在「早餐蛋白质摄入」一段处中断，节目后半的补剂细节未包含在内。内容仅供了解，不构成医疗建议；怀疑器质性疾病请就医。
+</footer>
+
+</div>
+</body>
+</html>

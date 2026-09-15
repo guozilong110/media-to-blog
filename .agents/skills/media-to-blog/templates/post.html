@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>标题 · 内容总结</title>
+<style>
+  :root { --ink:#1d1d1f; --muted:#666; --line:#e3e3e6; --accent:#0b6b5f; --bad:#b3261e; --good:#1a7f37; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+         color:var(--ink); line-height:1.75; background:#fafafa; }
+  .wrap { max-width:860px; margin:0 auto; padding:48px 24px 80px; }
+  header { border-bottom:2px solid var(--ink); padding-bottom:20px; margin-bottom:36px; }
+  h1 { font-size:1.9rem; margin:0 0 8px; letter-spacing:-.01em; }
+  .meta { color:var(--muted); font-size:.9rem; }
+  h2 { font-size:1.3rem; margin:44px 0 12px; padding-top:14px; border-top:1px solid var(--line); }
+  h3 { font-size:1.05rem; margin:24px 0 8px; }
+  p, li { font-size:1rem; }
+  ul { padding-left:1.3em; }
+  .lead { background:#fff; border:1px solid var(--line); border-radius:10px; padding:18px 22px; }
+  table { width:100%; border-collapse:collapse; margin:14px 0; background:#fff; font-size:.95rem; }
+  th, td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+  th { background:#f2f4f4; font-weight:600; }
+  .cols { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:640px){ .cols { grid-template-columns:1fr; } }
+  .card { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 18px; }
+  .card.bad { border-left:4px solid var(--bad); }
+  .card.good { border-left:4px solid var(--good); }
+  .card h4 { margin:.2em 0 .5em; font-size:1rem; }
+  .note { background:#fff8e6; border:1px solid #f0dda0; border-radius:8px; padding:12px 16px; font-size:.95rem; }
+  .tier { background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px 18px; margin:12px 0; }
+  .tier span { display:inline-block; background:var(--accent); color:#fff; border-radius:4px;
+               padding:1px 8px; font-size:.8rem; margin-right:8px; }
+  figure { margin:24px 0; }
+  figure svg { display:block; width:100%; height:auto; }
+  figcaption { color:var(--muted); font-size:.85rem; margin-top:8px; }
+  code { background:#eef1f1; padding:1px 5px; border-radius:4px; font-size:.9em; }
+  footer { margin-top:48px; padding-top:16px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>标题</h1>
+  <p class="meta">来源节目 · 讲者 · 引用的资料出处</p>
+</header>
+
+<p class="lead">开篇给出核心结论：这段内容要解决什么问题，讲者的主要判断是什么。让只读这一段的人也能拿到答案。</p>
+
+<h2>章节标题（按内容逻辑分，不套模板）</h2>
+<p>正文段落。</p>
+
+<h3>子标题</h3>
+<p>正文段落。</p>
+
+<!-- 并列的类型、人群、方式对比用表格 -->
+<table>
+  <tr><th>列一</th><th>列二</th></tr>
+  <tr><td>内容</td><td>内容</td></tr>
+</table>
+
+<!-- 正反对照用双列卡片 -->
+<div class="cols">
+  <div class="card good">
+    <h4>推荐做法</h4>
+    <ul><li>要点</li></ul>
+  </div>
+  <div class="card bad">
+    <h4>不推荐做法</h4>
+    <ul><li>要点</li></ul>
+  </div>
+</div>
+
+<!-- 图表：由 diagram-design skill 生成，SVG 直接内联，不要 iframe 或外链 img -->
+<figure>
+  <!-- <svg viewBox="0 0 800 400" role="img" aria-label="图表内容的文字描述">…</svg> -->
+  <figcaption>图注：说明这张图在讲什么。</figcaption>
+</figure>
+
+<!-- 需要单独强调的辨析或提醒 -->
+<div class="note">
+  <p>提示内容。</p>
+</div>
+
+<!-- 有优先级顺序的建议 -->
+<div class="tier">
+  <span>第一优先级</span><strong>标题</strong>——说明。
+  <ul><li>具体做法</li></ul>
+</div>
+
+<footer>
+  说明：本页是对<来源>转录内容的整理。<若转录中断，说明缺失了哪部分>。内容仅供了解，不构成专业建议。
+</footer>
+
+</div>
+</body>
+</html>
