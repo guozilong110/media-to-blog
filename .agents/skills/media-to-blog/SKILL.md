@@ -37,7 +37,6 @@ metadata:
 已有转录文本就跳过这一步。
 
 ```bash
-cd /Users/zilong/git/Qwen3-ASR-1.7B-8bit
 source .venv/bin/activate
 python transcribe.py <URL 或本地路径> --language Chinese
 ```
