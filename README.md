@@ -4,7 +4,7 @@
 
 ## 怎么用
 
-在 Kiro / pi 这类支持 skill 的 agent 里，调用 skill 再用一句话说需求：
+在 Codex / pi 这类支持 skill 的 agent 里，调用 skill 再用一句话说需求：
 
 ```
 /skill:media-to-blog
